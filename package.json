@@ -1,0 +1,14 @@
+{
+  "name": "everday",
+  "version": "0.0.1",
+  "description": "frontend de everday",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camille CRAPAT",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.1"
+  }
+}

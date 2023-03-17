@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
@@ -20,6 +19,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/firstconnexion" element={<FirstConnexion />} />
+        <Route path="/allposts" element={<AllPosts />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

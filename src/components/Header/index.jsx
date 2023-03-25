@@ -1,6 +1,8 @@
 import "./index.css";
 import logo from "../../assets/img/icon-left-font-monochrome-white.svg";
 
+import profileTest from "../../assets/img/profile.jpg";
+
 function Header() {
   return (
     <header className="header">
@@ -8,7 +10,7 @@ function Header() {
         <img src={logo} alt="Logo de Everday" />
       </div>
       <div className="profile">
-        <img src={logo} alt="Photo de profile de l'utilisateur" />
+        <img src={profileTest} alt="profile de l'utilisateur" />
       </div>
     </header>
   );

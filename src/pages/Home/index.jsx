@@ -9,7 +9,7 @@ function Home() {
       <section className="connexion">
         <div className="connexion--forms">
           <input
-            type="text"
+            type="email"
             id="mail"
             name="mail"
             placeholder="Adresse e-mail"

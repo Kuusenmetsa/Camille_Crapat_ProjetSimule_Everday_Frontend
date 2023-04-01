@@ -11,7 +11,7 @@ function Home() {
     saveToasts(
       "false",
       "L'application est actuellement reliée à aucune API.",
-      2
+      3
     );
   }
   return (

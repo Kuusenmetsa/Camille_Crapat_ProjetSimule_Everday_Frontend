@@ -2,7 +2,18 @@ import "./index.css";
 
 import Header from "../../components/HeaderHorsCo";
 
+import { ToastsContext } from "../../utils/context";
+import { useContext } from "react";
+
 function Home() {
+  const { saveToasts } = useContext(ToastsContext);
+  function connexion() {
+    saveToasts(
+      "false",
+      "L'application est actuellement reliée à aucune API.",
+      2
+    );
+  }
   return (
     <div>
       <Header />
@@ -23,7 +34,7 @@ function Home() {
             className="input"
           />
         </div>
-        <button>Connexion</button>
+        <button onClick={() => connexion()}>Connexion</button>
       </section>
     </div>
   );

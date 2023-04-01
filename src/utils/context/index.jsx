@@ -12,6 +12,11 @@ export const ToastsProvider = ({ children }) => {
       timer: timer,
     };
     setToasts((v) => [...v, newToasts]);
+    if (timer) {
+      setTimeout(() => {
+        setToasts((v) => v.filter((y) => y.id !== newToasts.id));
+      }, timer * 1000);
+    }
   };
   const deleteToast = (id) => {
     setToasts((v) => v.filter((y) => y.id !== id));

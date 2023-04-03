@@ -1,12 +1,11 @@
 .connexion {
-  width: 100%;
+  width: 100vw;
   height: 63vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
   background-color: #122442;
-  padding: 20px;
+  padding: 6vh 5.33vh 3vh 5.33vh;
 }
 .connexion--forms {
   width: 100%;
@@ -15,20 +14,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 25px;
+  margin-bottom: 3.74vh;
 }
 .input {
   width: 100%;
   height: 37%;
   font-style: italic;
-  font-size: 10pt;
-  padding-left: 8px;
+  font-size: 0.84em;
+  padding-left: 2.13vw;
 }
 button {
   width: 100%;
   height: 11%;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 0.84em;
   color: #fff;
   background-color: #08162e;
   border: none;

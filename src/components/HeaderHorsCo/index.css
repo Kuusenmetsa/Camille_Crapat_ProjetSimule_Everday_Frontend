@@ -1,13 +1,13 @@
 .headerHorsCo {
-  width: 100%;
+  width: 100vw;
   height: 25vh;
   display: flex;
   align-items: flex-end;
   background-color: #122442;
-  padding: 20px;
+  padding: 2.99vh 5.33vw;
 }
 .logo {
-  width: 100%;
+  width: 100vw;
   height: 30%;
   display: flex;
   justify-content: center;

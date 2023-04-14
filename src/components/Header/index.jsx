@@ -5,6 +5,7 @@ import profileTest from "../../assets/img/profile.jpg";
 
 import { NavContext } from "../../utils/context";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const { nav, actionNav } = useContext(NavContext);
@@ -22,10 +23,18 @@ function Header() {
       {nav && (
         <nav>
           <ul>
-            <li>Accueil</li>
-            <li>Voir mon profil</li>
-            <li>Paramètres</li>
-            <li>Se déconnecter</li>
+            <li>
+              <Link to="/">Accueil</Link>
+            </li>
+            <li>
+              <Link to="/*">Voir mon profil</Link>
+            </li>
+            <li>
+              <Link to="/*">Paramètres</Link>
+            </li>
+            <li>
+              <Link to="/">Se déconnecter</Link>
+            </li>
           </ul>
         </nav>
       )}

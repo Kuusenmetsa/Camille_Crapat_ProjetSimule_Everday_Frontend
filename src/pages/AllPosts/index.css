@@ -49,10 +49,32 @@
   background-color: #fff;
   margin-top: 2.25vh;
 }
-.post .blockProfile {
-  width: 100vw;
+.post .blockEntete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 9vh;
   padding: 0.75vh 2.66vw;
+  width: 100vw;
+}
+.post .blockEntete .blockMenu {
+  width: 7%;
+  height: 66%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.post .blockEntete .blockMenu:hover {
+  background-color: #e2e2e2;
+}
+.post.blockEntete.blockMenu img {
+  width: 100%;
+}
+.post .blockProfile {
+  width: 90%;
+  height: 100%;
   display: flex;
   align-items: center;
 }

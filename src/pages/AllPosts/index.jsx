@@ -5,6 +5,7 @@ import imageTest from "../../assets/img/imageTest.jpg";
 import thumbsUpWhite from "../../assets/img/thumbs-up-solid-white.svg";
 import thumbsUpGrey from "../../assets/img/thumbs-up-regular-grey.svg";
 // import thumbsUpBlue from "../../assets/img/thumbs-up-regular-blue.svg";
+import ellipsis from "../../assets/img/ellipsis-solid.svg";
 import commentGrey from "../../assets/img/comment-regular-grey.svg";
 import profileTest from "../../assets/img/profile.jpg";
 
@@ -25,15 +26,23 @@ function AllPosts() {
               Actuellement, il n'y a aucun article...
             </div> */}
           <div className="post">
-            <div className="blockProfile">
-              <div className="blockProfile__profile">
-                <img src={profileTest} alt="profile de l'utilisateur" />
+            <div className="blockEntete">
+              <div className="blockProfile">
+                <div className="blockProfile__profile">
+                  <img src={profileTest} alt="profile de l'utilisateur" />
+                </div>
+                <div className="blockProfile__infos">
+                  <div className="blockProfile__infos__name">
+                    Camille Crapat
+                  </div>
+                  <div className="blockProfile__infos__time">22 min</div>
+                </div>
               </div>
-              <div className="blockProfile__infos">
-                <div className="blockProfile__infos__name">Camille Crapat</div>
-                <div className="blockProfile__infos__time">22 min</div>
+              <div className="blockMenu">
+                <img src={ellipsis} alt="icône menu" />
               </div>
             </div>
+
             <div className="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
               necessitatibus est, ducimus ab cum delectus consequatur aliquam,

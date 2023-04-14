@@ -28,3 +28,21 @@ export const ToastsProvider = ({ children }) => {
     </ToastsContext.Provider>
   );
 };
+
+export const NavContext = createContext();
+
+export const NavProvider = ({ children }) => {
+  const [nav, setNav] = useState(false);
+  const actionNav = () => {
+    if (nav === false) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
+  return (
+    <NavContext.Provider value={{ nav, actionNav }}>
+      {children}
+    </NavContext.Provider>
+  );
+};

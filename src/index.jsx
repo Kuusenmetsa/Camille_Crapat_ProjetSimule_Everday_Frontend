@@ -14,22 +14,25 @@ import Error from "./pages/Error";
 import Toasts from "./components/Toast";
 
 import { ToastsProvider } from "./utils/context";
+import { NavProvider } from "./utils/context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
     <ToastsProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/firstconnexion" element={<FirstConnexion />} />
-          <Route path="/allposts" element={<AllPosts />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-        <Toasts />
-        <Footer />
-      </Router>
+      <NavProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/firstconnexion" element={<FirstConnexion />} />
+            <Route path="/allposts" element={<AllPosts />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+          <Toasts />
+          <Footer />
+        </Router>
+      </NavProvider>
     </ToastsProvider>
   </React.StrictMode>
 );

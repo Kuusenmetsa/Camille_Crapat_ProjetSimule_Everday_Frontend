@@ -1,5 +1,6 @@
 import "./index.css";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 import imageTest from "../../assets/img/imageTest.jpg";
 import thumbsUpWhite from "../../assets/img/thumbs-up-solid-white.svg";
@@ -9,16 +10,20 @@ import ellipsis from "../../assets/img/ellipsis-solid.svg";
 import commentGrey from "../../assets/img/comment-regular-grey.svg";
 import profileTest from "../../assets/img/profile.jpg";
 
+import { Link } from "react-router-dom";
+
 function AllPosts() {
   return (
-    <div>
+    <>
       <Header />
       <div className="allPosts">
         <div className="createPost">
           <div className="profile">
             <img src={profileTest} alt="profile de l'utilisateur" />
           </div>
-          <div className="linkCreatePost">Bonjour Camille, quoi de neuf ?</div>
+          <Link to="/createpost" className="linkCreatePost">
+            Bonjour Camille, quoi de neuf ?
+          </Link>
         </div>
         <div className="posts">
           {/*
@@ -135,7 +140,8 @@ function AllPosts() {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

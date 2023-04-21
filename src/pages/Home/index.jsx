@@ -1,6 +1,7 @@
 import "./index.css";
 
 import Header from "../../components/HeaderHorsCo";
+import Footer from "../../components/Footer";
 
 import { ToastsContext } from "../../utils/context";
 import { useContext } from "react";
@@ -15,7 +16,7 @@ function Home() {
     );
   }
   return (
-    <div>
+    <>
       <Header />
       <section className="connexion">
         <div className="connexion--forms">
@@ -36,7 +37,8 @@ function Home() {
         </div>
         <button onClick={() => connexion()}>Connexion</button>
       </section>
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,10 +1,11 @@
 import "./index.css";
 
 import Header from "../../components/HeaderHorsCo";
+import Footer from "../../components/Footer";
 
 function FirstConnexion() {
   return (
-    <div>
+    <>
       <Header />
       <section className="connexion">
         <div className="connexion--forms">
@@ -26,7 +27,8 @@ function FirstConnexion() {
         <button>Changer le mot de passe</button>
         <button className="buttonDeconnexion">Déconnexion</button>
       </section>
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,10 +1,11 @@
 import "./index.css";
 
 import Header from "../../components/HeaderHorsCo";
+import Footer from "../../components/Footer";
 
 function Error() {
   return (
-    <div>
+    <>
       <Header />
       <section className="error">
         <div className="error--oups">Oups...</div>
@@ -13,7 +14,8 @@ function Error() {
           La page que vous demandez n'est pas disponible...
         </div>
       </section>
-    </div>
+      <Footer />
+    </>
   );
 }
 

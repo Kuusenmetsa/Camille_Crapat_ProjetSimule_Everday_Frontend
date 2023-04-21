@@ -4,12 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 
-import Footer from "./components/Footer";
-
 import Home from "./pages/Home";
 import FirstConnexion from "./pages/FirstConnexion";
 import AllPosts from "./pages/AllPosts";
 import Error from "./pages/Error";
+import CreatePost from "./pages/CreatePost";
 
 import Toasts from "./components/Toast";
 
@@ -27,10 +26,10 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/firstconnexion" element={<FirstConnexion />} />
             <Route path="/allposts" element={<AllPosts />} />
+            <Route path="/createpost" element={<CreatePost />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <Toasts />
-          <Footer />
         </Router>
       </NavProvider>
     </ToastsProvider>

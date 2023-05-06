@@ -24,7 +24,7 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <Link to="/allposts">Accueil</Link>
             </li>
             <li>
               <Link to="/*">Voir mon profil</Link>

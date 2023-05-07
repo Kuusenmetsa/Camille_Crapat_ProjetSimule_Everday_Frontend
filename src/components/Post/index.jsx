@@ -15,10 +15,14 @@ import { useState } from "react";
 import formatName from "../../utils/functions/formatName";
 import formatTime from "../../utils/functions/formatTime";
 
-function Post() {
+function Post({ id }) {
   const [nav, setNav] = useState(false);
-  const openMenu = (id) => {
-    setNav(!nav);
+  const [commentOpen, setCommentOpen] = useState(false);
+  const buttonComment = () => {
+    setCommentOpen(true);
+    setTimeout(() => {
+      document.getElementById(`createCommentInput-${id}`).focus();
+    }, 1);
   };
   return (
     <div className="post" id="1">
@@ -36,7 +40,7 @@ function Post() {
             </div>
           </div>
         </div>
-        <div className="blockMenu" onClick={() => openMenu()}>
+        <div className="blockMenu" onClick={() => setNav(!nav)}>
           <img src={ellipsis} alt="icône menu" />
         </div>
         {nav === true && (
@@ -73,9 +77,14 @@ function Post() {
           </div>
           13
         </div>
-        <div className="likeAndComment__comment">16 commentaires</div>
+        <div
+          className="likeAndComment__comment"
+          onClick={() => setCommentOpen(!commentOpen)}
+        >
+          16 commentaires
+        </div>
       </div>
-      <div className="likeAndCommentBlockButton line">
+      <div className={`likeAndCommentBlockButton ${commentOpen ? "line" : ""}`}>
         {/*
       <div className="likeButton">
         <div className="likeButton--icone">
@@ -93,59 +102,63 @@ function Post() {
           <div className="commentButton--icone">
             <img src={commentGrey} alt="Icône comment" />
           </div>
-          <div className="commentButton--text">Commenter</div>
-        </div>
-      </div>
-      <div className="commentsAndCreateComment">
-        <div className="createComment">
-          <div className="profile">
-            <img src={profileTest} alt="profile de l'utilisateur" />
-          </div>
-          <input
-            type="text"
-            className="createCommentInput"
-            name="createComment"
-            id="createComment"
-            placeholder="Votre commentaire..."
-          />
-        </div>
-        <div className="comments">
-          <div className="commentContainer">
-            <div className="profile">
-              <img src={profileTest} alt="profile de l'utilisateur" />
-            </div>
-            <div className="comment">
-              <div className="commentBlock">
-                <div className="commentBlock--title">Camille Crapat</div>
-                <div className="commentBlock--text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis doloribus doloremque unde eius quam pariatur
-                  mollitia impedit ducimus autem cum sit et repellendus quasi,
-                  ut nobis sed facilis iste molestiae?
-                </div>
-              </div>
-              <div className="commentTime">Le 06/04/2023 à 18h08</div>
-            </div>
-          </div>
-          <div className="commentContainer">
-            <div className="profile">
-              <img src={profileTest} alt="profile de l'utilisateur" />
-            </div>
-            <div className="comment">
-              <div className="commentBlock">
-                <div className="commentBlock--title">Camille Crapat</div>
-                <div className="commentBlock--text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis doloribus doloremque unde eius quam pariatur
-                  mollitia impedit ducimus autem cum sit et repellendus quasi,
-                  ut nobis sed facilis iste molestiae?
-                </div>
-              </div>
-              <div className="commentTime">Le 06/04/2023 à 18h08</div>
-            </div>
+          <div className="commentButton--text" onClick={() => buttonComment()}>
+            Commenter
           </div>
         </div>
       </div>
+      {commentOpen && (
+        <div className="commentsAndCreateComment">
+          <div className="createComment">
+            <div className="profile">
+              <img src={profileTest} alt="profile de l'utilisateur" />
+            </div>
+            <input
+              type="text"
+              className="createCommentInput"
+              name="createComment"
+              id={`createCommentInput-${id}`}
+              placeholder="Votre commentaire..."
+            />
+          </div>
+          <div className="comments">
+            <div className="commentContainer">
+              <div className="profile">
+                <img src={profileTest} alt="profile de l'utilisateur" />
+              </div>
+              <div className="comment">
+                <div className="commentBlock">
+                  <div className="commentBlock--title">Camille Crapat</div>
+                  <div className="commentBlock--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis doloribus doloremque unde eius quam pariatur
+                    mollitia impedit ducimus autem cum sit et repellendus quasi,
+                    ut nobis sed facilis iste molestiae?
+                  </div>
+                </div>
+                <div className="commentTime">Le 06/04/2023 à 18h08</div>
+              </div>
+            </div>
+            <div className="commentContainer">
+              <div className="profile">
+                <img src={profileTest} alt="profile de l'utilisateur" />
+              </div>
+              <div className="comment">
+                <div className="commentBlock">
+                  <div className="commentBlock--title">Camille Crapat</div>
+                  <div className="commentBlock--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis doloribus doloremque unde eius quam pariatur
+                    mollitia impedit ducimus autem cum sit et repellendus quasi,
+                    ut nobis sed facilis iste molestiae?
+                  </div>
+                </div>
+                <div className="commentTime">Le 06/04/2023 à 18h08</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

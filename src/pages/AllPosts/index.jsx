@@ -24,11 +24,11 @@ function AllPosts() {
             <div className="notPost">
               Actuellement, il n'y a aucun article...
             </div> */}
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+          <Post id="1" />
+          <Post id="2" />
+          <Post id="3" />
+          <Post id="4" />
+          <Post id="5" />
         </div>
       </div>
       <Footer />

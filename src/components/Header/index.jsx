@@ -24,16 +24,24 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/allposts">Accueil</Link>
+              <Link to="/allposts" onClick={() => actionNav(!nav)}>
+                Accueil
+              </Link>
             </li>
             <li>
-              <Link to="/*">Voir mon profil</Link>
+              <Link to="/profile" onClick={() => actionNav(!nav)}>
+                Voir mon profil
+              </Link>
             </li>
             <li>
-              <Link to="/*">Paramètres</Link>
+              <Link to="/params" onClick={() => actionNav(!nav)}>
+                Paramètres
+              </Link>
             </li>
             <li>
-              <Link to="/">Se déconnecter</Link>
+              <Link to="/" onClick={() => actionNav(!nav)}>
+                Se déconnecter
+              </Link>
             </li>
           </ul>
         </nav>

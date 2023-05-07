@@ -34,11 +34,7 @@ export const NavContext = createContext();
 export const NavProvider = ({ children }) => {
   const [nav, setNav] = useState(false);
   const actionNav = () => {
-    if (nav === false) {
-      setNav(true);
-    } else {
-      setNav(false);
-    }
+    setNav(!nav);
   };
   return (
     <NavContext.Provider value={{ nav, actionNav }}>

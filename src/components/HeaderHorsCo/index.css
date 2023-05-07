@@ -1,18 +1,56 @@
 .headerHorsCo {
   width: 100vw;
-  height: 25vh;
   display: flex;
-  align-items: flex-end;
   background-color: #122442;
-  padding: 2.99vh 5.33vw;
 }
 .logo {
   width: 100vw;
-  height: 30%;
   display: flex;
   justify-content: center;
 }
 .logo img {
   width: 60%;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .headerHorsCo {
+    height: 25vh;
+    padding: 2.99vh 5.33vw;
+    align-items: flex-end;
+  }
+  .logo {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .headerHorsCo {
+    height: 25vh;
+    padding: 2.99vh 5.33vw;
+    align-items: flex-end;
+  }
+  .logo {
+    height: 32%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .headerHorsCo {
+    height: 18vh;
+    align-items: center;
+  }
+  .logo {
+    height: 38%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .headerHorsCo {
+    height: 18vh;
+    align-items: center;
+  }
+  .logo {
+    height: 40%;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2560px) {
+}
+@media screen and (min-width: 2561px) {
 }

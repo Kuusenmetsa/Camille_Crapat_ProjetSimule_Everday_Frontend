@@ -1,34 +1,134 @@
 .connexion {
   width: 100vw;
-  height: 63vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #122442;
-  padding: 6vh 5.33vh 3vh 5.33vh;
+}
+.connexionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .connexion--forms {
-  width: 100%;
-  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 3.74vh;
 }
 .input {
   width: 100%;
-  height: 37%;
   font-style: italic;
-  font-size: 0.84em;
-  padding-left: 2.13vw;
 }
 button {
   width: 100%;
-  height: 11%;
   font-weight: bold;
-  font-size: 0.84em;
   color: #fff;
   background-color: #08162e;
   border: none;
+}
+@media screen and (max-width: 480px) {
+  .connexion {
+    height: 63vh;
+  }
+  .connexionContainer {
+    width: 100vw;
+    height: 100%;
+    padding: 6vh 5.33vh 3vh 5.33vh;
+  }
+  .connexion--forms {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 3.74vh;
+  }
+  .input {
+    height: 37%;
+    font-size: 0.84em;
+    padding-left: 2.13vw;
+  }
+  button {
+    height: 11%;
+    font-size: 0.84em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .connexion {
+    height: 63vh;
+  }
+  .connexionContainer {
+    width: 100vw;
+    height: 100%;
+    padding: 6vh 5.33vh 3vh 5.33vh;
+  }
+  .connexion--forms {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 3.74vh;
+  }
+  .input {
+    height: 37%;
+    font-size: 0.84em;
+    padding-left: 2.13vw;
+  }
+  button {
+    height: 11%;
+    font-size: 0.84em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .connexion {
+    height: 70vh;
+    justify-content: center;
+  }
+  .connexionContainer {
+    width: 55vw;
+    height: 58%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 5.33vh 3vh 5.33vh;
+  }
+  .connexion--forms {
+    width: 100%;
+    height: 65%;
+  }
+  .input {
+    height: 37%;
+    font-size: 1em;
+    padding-left: 2.13vw;
+  }
+  button {
+    height: 22%;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .connexion {
+    height: 70vh;
+    justify-content: center;
+  }
+  .connexionContainer {
+    width: 35vw;
+    height: 65%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5vh 2.28vw;
+  }
+  .connexion--forms {
+    width: 100%;
+    height: 50%;
+  }
+  .input {
+    height: 40%;
+    font-size: 1em;
+    padding-left: 0.8vw;
+  }
+  button {
+    height: 20%;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2560px) {
+}
+@media screen and (min-width: 2561px) {
 }

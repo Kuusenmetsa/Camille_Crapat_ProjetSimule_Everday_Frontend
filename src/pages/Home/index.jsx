@@ -19,23 +19,25 @@ function Home() {
     <>
       <Header />
       <section className="connexion">
-        <div className="connexion--forms">
-          <input
-            type="email"
-            id="mail"
-            name="mail"
-            placeholder="Adresse e-mail"
-            className="input"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Mot de passe"
-            className="input"
-          />
+        <div className="connexionContainer">
+          <div className="connexion--forms">
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="Adresse e-mail"
+              className="input"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mot de passe"
+              className="input"
+            />
+          </div>
+          <button onClick={() => connexion()}>Connexion</button>
         </div>
-        <button onClick={() => connexion()}>Connexion</button>
       </section>
       <Footer />
     </>

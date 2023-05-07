@@ -1,4 +1,8 @@
 .buttonDeconnexion {
   background-color: #af3a42;
-  margin-top: 2.25vh;
+}
+@media screen and (max-width: 1024px) {
+  .buttonDeconnexion {
+    margin-top: 2.25vh;
+  }
 }

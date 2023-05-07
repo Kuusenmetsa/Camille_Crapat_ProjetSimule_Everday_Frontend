@@ -21,3 +21,13 @@
   font-size: 1.25em;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .error {
+    height: 63vh;
+  }
+}
+@media screen and (min-width: 769px) {
+  .error {
+    height: 70vh;
+  }
+}

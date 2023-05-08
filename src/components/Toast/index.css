@@ -11,7 +11,7 @@
   align-items: center;
   border-radius: 5px;
   box-shadow: 0px 0px 7px 3px #464646;
-  margin-top: 2.36%;
+  margin-top: 1.32vh;
   padding: 2%;
 }
 .toast--icone {
@@ -32,7 +32,7 @@
   font-weight: bold;
 }
 .toast--text--message {
-  margin-top: 0.87%;
+  margin-top: 0.54vh;
   font-size: 0.83em;
 }
 .toast--close {

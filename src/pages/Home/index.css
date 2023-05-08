@@ -34,7 +34,7 @@ button {
   .connexionContainer {
     width: 100%;
     height: 100%;
-    padding: 6vh 5.33vh 3vh 5.33vh;
+    padding: 5.62vh 9.47% 3vh 9.47%;
   }
   .connexion--forms {
     width: 100%;
@@ -44,7 +44,7 @@ button {
   .input {
     height: 37%;
     font-size: 0.84em;
-    padding-left: 2.13vw;
+    padding-left: 2.5%;
   }
   button {
     height: 11%;
@@ -58,17 +58,17 @@ button {
   .connexionContainer {
     width: 100%;
     height: 100%;
-    padding: 6vh 5.33vh 3vh 5.33vh;
+    padding: 8vh 9.47% 5.33% 4vh;
   }
   .connexion--forms {
     width: 100%;
     height: 30%;
-    margin-bottom: 3.74vh;
+    margin-bottom: 5.24vh;
   }
   .input {
     height: 37%;
     font-size: 0.84em;
-    padding-left: 2.13vw;
+    padding-left: 2.65%;
   }
   button {
     height: 11%;
@@ -85,7 +85,7 @@ button {
     height: 58%;
     display: flex;
     justify-content: space-between;
-    padding: 6vh 5.33vh 3vh 5.33vh;
+    padding: 6vh 4% 3vh 4%;
   }
   .connexion--forms {
     width: 100%;
@@ -94,7 +94,7 @@ button {
   .input {
     height: 37%;
     font-size: 1em;
-    padding-left: 2.13vw;
+    padding-left: 4.53%;
   }
   button {
     height: 22%;
@@ -112,7 +112,7 @@ button {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 7.5vh 2.28vw;
+    padding: 7.5vh 2.28%;
   }
   .connexion--forms {
     width: 100%;
@@ -121,7 +121,7 @@ button {
   .input {
     height: 40%;
     font-size: 1em;
-    padding-left: 0.8vw;
+    padding-left: 2.63%;
   }
   button {
     height: 20%;

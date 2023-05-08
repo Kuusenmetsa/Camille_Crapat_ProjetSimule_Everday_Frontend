@@ -15,7 +15,7 @@
 @media screen and (max-width: 480px) {
   .headerHorsCo {
     height: 25vh;
-    padding: 2.99vh 5.33vw;
+    padding: 5.33%;
     align-items: flex-end;
   }
   .logo {
@@ -25,7 +25,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .headerHorsCo {
     height: 25vh;
-    padding: 2.99vh 5.33vw;
+    padding: 3.8% 5.55%;
     align-items: flex-end;
   }
   .logo {

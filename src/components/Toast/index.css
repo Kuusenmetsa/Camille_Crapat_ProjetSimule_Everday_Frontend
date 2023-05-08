@@ -11,10 +11,11 @@
   align-items: center;
   border-radius: 5px;
   box-shadow: 0px 0px 7px 3px #464646;
-  margin-top: 1.2vh;
+  margin-top: 2.36%;
 }
 .toast--icone {
   height: 100%;
+  margin-right: 4.44%;
 }
 .toast--icone img {
   width: 100%;
@@ -30,11 +31,12 @@
   font-weight: bold;
 }
 .toast--text--message {
-  margin-top: 0.3vh;
+  margin-top: 0.87%;
   font-size: 0.83em;
 }
 .toast--close {
   align-self: flex-start;
+  margin-left: 4.44%;
 }
 .toast--close img {
   width: 100%;
@@ -48,18 +50,16 @@
   .toast {
     width: 90%;
     min-height: 9vh;
-    padding: 1.5vh 2.67vw;
+    padding: 2%;
   }
   .toast--icone {
     width: 15%;
-    margin-right: 4vw;
   }
   .toast--text {
     width: 80%;
   }
   .toast--close {
     width: 5%;
-    margin-left: 4vw;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -75,18 +75,16 @@
   .toast {
     width: 95%;
     min-height: 9vh;
-    padding: 2% 2%;
+    padding: 2%;
   }
   .toast--icone {
     width: 12%;
-    margin-right: 5%;
   }
   .toast--text {
     width: 74%;
   }
   .toast--close {
     width: 4%;
-    margin-left: 5%;
   }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {

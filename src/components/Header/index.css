@@ -1,12 +1,11 @@
 .header {
-  max-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .header .blockHeader {
-  width: 100vw;
-  height: 10vh;
+  width: 100%;
   background-color: #122442;
   display: flex;
   justify-content: space-between;
@@ -14,7 +13,7 @@
   padding: 1.5vh 2.66vw;
 }
 .header .blockHeader .logo {
-  width: 42vw;
+  width: 42%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -38,7 +37,7 @@
 }
 .header nav {
   background-color: #ededed;
-  width: 100vw;
+  width: 100%;
 }
 .header nav ul {
   width: 100%;
@@ -62,4 +61,22 @@
 }
 .header nav ul li:last-child {
   border-bottom: none;
+}
+@media screen and (max-width: 480px) {
+  .header .blockHeader {
+    height: 10vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .header .blockHeader {
+    height: 9vh;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2560px) {
+}
+@media screen and (min-width: 2561px) {
 }

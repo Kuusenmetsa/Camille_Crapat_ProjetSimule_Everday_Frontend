@@ -4,10 +4,9 @@
   padding: 1vh 0;
 }
 .createPost {
-  width: 100vw;
   height: 10vh;
   background-color: #fff;
-  padding: 1.22vh;
+  padding: 1.22vh 2.17%;
   display: flex;
   align-items: center;
 }
@@ -17,7 +16,7 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  margin-right: 2.66vw;
+  margin-right: 2.78%;
 }
 .createPost .profile img {
   width: 100%;
@@ -27,14 +26,15 @@
 .createPost .linkCreatePost {
   width: 85%;
   height: 70%;
-  border: 1px solid #8c8c8c;
+  /*border: 1px solid #8c8c8c;*/
   border-radius: 32vh;
-  padding-left: 2.66vw;
+  padding-left: 2.78%;
   font-size: 0.84em;
   color: #454545;
   display: flex;
   align-items: center;
   text-decoration: none;
+  background-color: #efefef;
 }
 .notPost {
   width: 100vw;
@@ -42,4 +42,28 @@
   padding-top: 5.25vh;
   font-weight: 600;
   font-size: 0.84em;
+}
+@media screen and (max-width: 480px) {
+  .createPost {
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .allPosts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .createPost {
+    width: 45vw;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2560px) {
+}
+@media screen and (min-width: 2561px) {
 }

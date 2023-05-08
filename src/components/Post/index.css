@@ -1,17 +1,16 @@
 .post {
-  width: 100vw;
   height: auto;
   padding: 0.75vh 0;
   background-color: #fff;
   margin-top: 2.25vh;
 }
 .post .blockEntete {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 9vh;
-  padding: 0.75vh 2.66vw;
-  width: 100vw;
+  padding: 0.75vh 2.66%;
 }
 .post .blockEntete .blockMenu {
   height: 66%;
@@ -64,12 +63,12 @@
 }
 .post .text {
   font-size: 0.84em;
-  width: 100vw;
-  padding: 0.75vh 2.66vw;
+  width: 100%;
+  padding: 0.75vh 2.66%;
   text-align: justify;
 }
 .post .image {
-  width: 100vw;
+  width: 100%;
   height: auto;
   max-height: 40vh;
   overflow: hidden;
@@ -86,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75vh 2.66vw;
+  padding: 0.75vh 2.66%;
   font-size: 0.75em;
   border-bottom: 1px solid #aaaaaa;
 }
@@ -104,7 +103,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1.33vw;
+  margin-right: 2.66%;
 }
 
 .post
@@ -124,7 +123,7 @@
   text-decoration: underline;
 }
 .post .likeAndCommentBlockButton {
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   display: flex;
   font-size: 0.84em;
@@ -144,7 +143,7 @@
 .post .likeAndCommentBlockButton .likeButton .likeButton--icone {
   width: 10%;
   height: 100%;
-  margin-right: 1.33vw;
+  margin-right: 2.66%;
   display: flex;
   align-items: center;
 }
@@ -177,7 +176,7 @@
 .post .likeAndCommentBlockButton .commentButton .commentButton--icone {
   width: 10%;
   height: 100%;
-  margin-right: 1.33vw;
+  margin-right: 2.66%;
   display: flex;
   align-items: center;
 }
@@ -197,9 +196,9 @@
   border-bottom: 1px solid #aaaaaa;
 }
 .commentsAndCreateComment {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  padding: 0.75vh 2.66vw;
+  padding: 0.75vh 2.66%;
 }
 .commentsAndCreateComment .createComment {
   display: flex;
@@ -213,7 +212,7 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  margin-right: 2.66vw;
+  margin-right: 2.81%;
 }
 .commentsAndCreateComment .createComment .profile img {
   width: 100%;
@@ -225,12 +224,12 @@
   height: 100%;
   border: 1px solid #8c8c8c;
   border-radius: 56vh;
-  padding-left: 2.66vw;
+  padding-left: 2.81%;
   font-size: 0.84em;
   color: #454545;
 }
 .comments {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .commentContainer {
@@ -246,7 +245,7 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  margin-right: 2.66vw;
+  margin-right: 2.81%;
 }
 .commentContainer .profile img {
   width: 100%;
@@ -256,11 +255,11 @@
 .commentBlock {
   background-color: #e2e2e2;
   border-radius: 10px;
-  padding: 7px;
+  padding: 1.05vh 2.81%;
 }
 .commentBlock--title {
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: 0.3vh;
   font-size: 0.84em;
 }
 .commentBlock--text {
@@ -268,12 +267,12 @@
 }
 .commentTime {
   font-size: 0.7em;
-  padding-left: 3px;
-  margin-top: 1px;
+  padding-left: 1.28%;
+  margin-top: 0.15vh;
 }
 .nav {
   position: absolute;
-  width: 45vw;
+  width: 45%;
   height: 12vh;
   border-radius: 10px;
   background-color: #efefef;
@@ -286,7 +285,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vh 2vw;
+  padding: 1.5vh 4.44%;
   font-size: 0.84em;
 }
 .lineNav:hover {
@@ -298,7 +297,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3vw;
+  margin-right: 7.32%;
 }
 .lineNav--icone img {
   height: 100%;
@@ -311,4 +310,23 @@
 }
 .lineNav:first-child {
   border-bottom: #000 solid 1px;
+}
+@media screen and (max-width: 480px) {
+  .post {
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .post {
+    width: 45vw;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 2560px) {
+}
+@media screen and (min-width: 2561px) {
 }

@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import FirstConnexion from "./pages/FirstConnexion";
 import AllPosts from "./pages/AllPosts";
 import Error from "./pages/Error";
-import CreatePost from "./pages/CreatePost";
 import Params from "./pages/Params";
 import Profile from "./pages/Profile";
 
@@ -28,7 +27,6 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/firstconnexion" element={<FirstConnexion />} />
             <Route path="/allposts" element={<AllPosts />} />
-            <Route path="/createpost" element={<CreatePost />} />
             <Route path="/params" element={<Params />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<Error />} />

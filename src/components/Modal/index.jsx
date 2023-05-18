@@ -4,7 +4,6 @@ import Close from "../../assets/img/circle-xmark-solid.svg";
 function Modal({ modalOpen, setModalOpen, title, children }) {
   if (modalOpen) {
     document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-  } else {
   }
   const closeModal = () => {
     setModalOpen(!modalOpen);

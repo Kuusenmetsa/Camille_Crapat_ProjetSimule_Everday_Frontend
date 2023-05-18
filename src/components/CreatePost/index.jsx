@@ -1,10 +1,9 @@
 import "./index.css";
 
-import ArrowLeft from "../../assets/img/arrow-left-solid.svg";
 import Profile from "../../assets/img/profile.jpg";
 import { useState } from "react";
 
-function CreatePost({ createPostOpen, setCreatePostOpen }) {
+function CreatePost() {
   const [message, setMessage] = useState("Aucun fichier selectionné !");
   const displayNameFiles = () => {
     const file = document.getElementById("profileImg").files[0];
@@ -15,16 +14,7 @@ function CreatePost({ createPostOpen, setCreatePostOpen }) {
     }
   };
   return (
-    <div className="createPostPop">
-      <header className="headerCreatePost">
-        <div
-          className="arrow"
-          onClick={() => setCreatePostOpen(!createPostOpen)}
-        >
-          <img src={ArrowLeft} alt="flêche de retour" />
-        </div>
-        <div className="title">Créer une publication</div>
-      </header>
+    <>
       <div className="blockProfileCreatePost">
         <div className="profile">
           <img src={Profile} alt="profile de l'utilisateur" />
@@ -54,7 +44,7 @@ function CreatePost({ createPostOpen, setCreatePostOpen }) {
         <div className="profileImgName">{message}</div>
       </div>
       <button className="newPostButton">Publier</button>
-    </div>
+    </>
   );
 }
 

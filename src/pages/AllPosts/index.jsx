@@ -2,22 +2,37 @@ import "./index.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import profileTest from "../../assets/img/profile.jpg";
+import CreatePost from "../../components/CreatePost";
+import Modal from "../../components/Modal";
 
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import Post from "../../components/Post";
 
 function AllPosts() {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
+      {modalOpen && (
+        <Modal
+          modalOpen={modalOpen}
+          setModalOpen={setModalOpen}
+          title="Créer une publication"
+        >
+          <CreatePost />
+        </Modal>
+      )}
       <Header />
-      <div className="allPosts">
+      <div className="allPosts" id="allPosts">
         <div className="createPost">
           <div className="profile">
             <img src={profileTest} alt="profile de l'utilisateur" />
           </div>
-          <Link to="/createpost" className="linkCreatePost">
+          <div
+            className="linkCreatePost"
+            onClick={() => setModalOpen(!modalOpen)}
+          >
             Bonjour Camille, quoi de neuf ?
-          </Link>
+          </div>
         </div>
         <div className="posts">
           {/*

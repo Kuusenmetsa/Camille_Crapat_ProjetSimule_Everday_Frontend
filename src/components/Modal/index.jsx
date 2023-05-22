@@ -12,16 +12,14 @@ function Modal({ modalOpen, setModalOpen, title, children }) {
   return (
     <>
       <div className="bgrdModal" onClick={() => closeModal()}></div>
-      <div className="center">
-        <div className="modal">
-          <div className="modalHeader">
-            <div className="title">{title}</div>
-            <div className="close" onClick={() => closeModal()}>
-              <img src={Close} alt="icône de clôture de modal" />
-            </div>
+      <div className="modal">
+        <div className="modalHeader">
+          <div className="title">{title}</div>
+          <div className="close" onClick={() => closeModal()}>
+            <img src={Close} alt="icône de clôture de modal" />
           </div>
-          <div className="modalContainer">{children}</div>
         </div>
+        <div className="modalContainer">{children}</div>
       </div>
     </>
   );

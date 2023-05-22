@@ -1,11 +1,11 @@
 .bgrdModal {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100vw;
   height: 100vh;
-  z-index: -10;
   top: 0;
   left: 0;
   position: absolute;
+  z-index: 10;
 }
 .center {
   width: 100vw;
@@ -16,7 +16,7 @@
 }
 .modal {
   background-color: #fff;
-  z-index: -100;
+  z-index: 100;
 }
 .modalHeader {
   width: 100%;

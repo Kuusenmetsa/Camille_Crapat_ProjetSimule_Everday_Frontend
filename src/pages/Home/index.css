@@ -26,6 +26,7 @@ button {
   color: #fff;
   background-color: #08162e;
   border: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .connexion {

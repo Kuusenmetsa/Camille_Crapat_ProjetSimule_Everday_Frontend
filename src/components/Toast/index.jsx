@@ -12,10 +12,10 @@ function Toasts() {
   const { toasts, deleteToast } = useContext(ToastsContext);
   return (
     <>
-      {toasts.length > 0 && (
-        <div className="toasts">
-          <AnimatePresence>
-            {toasts.map((toast) => (
+      <div className="toasts">
+        <AnimatePresence>
+          {toasts.length > 0 &&
+            toasts.map((toast) => (
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -55,9 +55,8 @@ function Toasts() {
                 </div>
               </motion.div>
             ))}
-          </AnimatePresence>
-        </div>
-      )}
+        </AnimatePresence>
+      </div>
     </>
   );
 }

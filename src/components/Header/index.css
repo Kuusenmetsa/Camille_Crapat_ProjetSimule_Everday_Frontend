@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -10,16 +10,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vh 2.66vw;
+  padding: 1.5vh 2.66%;
 }
 .header .blockHeader .logo {
-  width: 42%;
-  height: 100%;
+  width: auto;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .header .blockHeader .logo img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 .header .blockHeader .profile {
@@ -28,6 +28,7 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .header .blockHeader .profile img {
@@ -36,7 +37,7 @@
   object-fit: cover;
 }
 .header nav {
-  background-color: #ededed;
+  background-color: #efefef;
   width: 100%;
 }
 .header nav ul {
@@ -47,15 +48,12 @@
 }
 .header nav ul li {
   width: 100%;
-  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.33px solid #000;
 }
 .header nav ul li a {
   font-weight: 600;
-  font-size: 0.84em;
   color: #000;
   text-decoration: none;
 }
@@ -66,17 +64,122 @@
   .header .blockHeader {
     height: 10vh;
   }
+  .header .blockHeader .logo {
+    height: 70%;
+  }
+  .header nav {
+    width: 100%;
+  }
+  .header nav ul li {
+    height: 5vh;
+    border-bottom: 0.33px solid #000;
+  }
+  .header nav ul li a {
+    font-size: 0.84em;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .header .blockHeader {
+    height: 9.5vh;
+  }
+  .header .blockHeader .logo {
+    height: 75%;
+  }
+  .header nav {
+    width: 100%;
+  }
+  .header nav ul li {
+    height: 4.3vh;
+    border-bottom: 0.33px solid #000;
+  }
+  .header nav ul li a {
+    font-size: 0.95em;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header .blockHeader {
+    height: 11vh;
+  }
+  .header .blockHeader .logo {
+    height: 80%;
+  }
+  .header nav {
+    width: 100%;
+  }
+  .header nav ul li {
+    height: 5vh;
+    border-bottom: 0.33px solid #000;
+  }
+  .header nav ul li a {
+    font-size: 0.98em;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
   .header .blockHeader {
     height: 9vh;
   }
+  .header .blockHeader .logo {
+    height: 80%;
+  }
+  .header nav {
+    width: 20%;
+    position: absolute;
+    top: 10vh;
+    right: 2.66%;
+    border: 0.33px solid #000;
+    border-radius: 5px;
+  }
+  .header nav ul li {
+    height: 5vh;
+    border-bottom: 0.33px solid #000;
+  }
+  .header nav ul li a {
+    font-size: 0.98em;
+  }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {
+  .header .blockHeader {
+    height: 9vh;
+  }
+  .header .blockHeader .logo {
+    height: 80%;
+  }
+  .header nav {
+    width: 20%;
+    position: absolute;
+    top: 10vh;
+    right: 2.66%;
+    border: 0.33px solid #000;
+    border-radius: 5px;
+  }
+  .header nav ul li {
+    height: 5vh;
+    border-bottom: 0.33px solid #000;
+  }
+  .header nav ul li a {
+    font-size: 0.98em;
+  }
 }
 @media screen and (min-width: 2561px) {
+  .header .blockHeader {
+    height: 9vh;
+  }
+  .header .blockHeader .logo {
+    height: 80%;
+  }
+  .header nav {
+    width: 20%;
+    position: absolute;
+    top: 10vh;
+    right: 2.66%;
+    border: 0.33px solid #000;
+    border-radius: 5px;
+  }
+  .header nav ul li {
+    height: 5vh;
+    border-bottom: 0.33px solid #000;
+  }
+  .header nav ul li a {
+    font-size: 0.98em;
+  }
 }

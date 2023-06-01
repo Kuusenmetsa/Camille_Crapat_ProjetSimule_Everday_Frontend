@@ -1,12 +1,8 @@
 .allPosts {
-  min-height: 78vh;
   background-color: #e2e2e2;
-  padding: 1vh 0;
 }
 .createPost {
-  height: 10vh;
   background-color: #fff;
-  padding: 1.22vh 2.17%;
   display: flex;
   align-items: center;
 }
@@ -16,7 +12,6 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  margin-right: 2.78%;
 }
 .createPost .profile img {
   width: 100%;
@@ -29,7 +24,6 @@
   /*border: 1px solid #8c8c8c;*/
   border-radius: 32vh;
   padding-left: 2.78%;
-  font-size: 0.84em;
   color: #454545;
   display: flex;
   align-items: center;
@@ -40,31 +34,145 @@
 .notPost {
   width: 100vw;
   text-align: center;
-  padding-top: 5.25vh;
   font-weight: 600;
-  font-size: 0.84em;
+  padding-top: 5.25vh;
 }
 @media screen and (max-width: 480px) {
+  .allPosts {
+    min-height: 78vh;
+    padding: 1vh 0;
+  }
   .createPost {
     width: 100vw;
+    height: 10vh;
+    padding: 1.22vh 2.66%;
+  }
+  .createPost .profile {
+    margin-right: 2.78%;
+  }
+  .createPost .linkCreatePost {
+    font-size: 0.84em;
+  }
+  .notPost {
+    font-size: 0.84em;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .allPosts {
+    min-height: 78.5vh;
+    padding: 1vh 0;
+  }
+  .createPost {
+    height: 9.5vh;
+    width: 100vw;
+    padding: 1.2vh 2.66%;
+  }
+  .createPost .profile {
+    margin-right: 2.66%;
+  }
+  .createPost .linkCreatePost {
+    font-size: 0.92em;
+  }
+  .notPost {
+    font-size: 0.92em;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-@media screen and (min-width: 1025px) and (max-width: 1600px) {
   .allPosts {
+    min-height: 77vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1vh 0;
+  }
+  .createPost {
+    width: 100vw;
+    height: 11vh;
+  }
+  .createPost {
+    width: 65vw;
+    border-radius: 10px;
+    padding: 1.25vh 1.8%;
+  }
+  .createPost .profile {
+    margin-right: 2.5%;
+  }
+  .createPost .linkCreatePost {
+    font-size: 0.95em;
+  }
+  .notPost {
+    font-size: 0.95em;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .allPosts {
+    min-height: 79vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
   }
   .createPost {
     width: 45vw;
     border-radius: 10px;
+    height: 9vh;
+    padding: 1.25vh 1%;
+  }
+  .createPost .profile {
+    margin-right: 2%;
+  }
+  .createPost .linkCreatePost {
+    font-size: 0.97em;
+  }
+  .notPost {
+    font-size: 0.92em;
   }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {
+  .allPosts {
+    min-height: 79vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+  }
+  .createPost {
+    width: 45vw;
+    border-radius: 10px;
+    height: 9vh;
+    padding: 1.25vh 1%;
+  }
+  .createPost .profile {
+    margin-right: 2%;
+  }
+  .createPost .linkCreatePost {
+    font-size: 0.97em;
+  }
+  .notPost {
+    font-size: 0.92em;
+  }
 }
 @media screen and (min-width: 2561px) {
+  .allPosts {
+    min-height: 79vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+  }
+  .createPost {
+    width: 45vw;
+    border-radius: 10px;
+    height: 9vh;
+    padding: 1.25vh 1%;
+  }
+  .createPost .profile {
+    margin-right: 2%;
+  }
+  .createPost .linkCreatePost {
+    font-size: 0.97em;
+  }
+  .notPost {
+    font-size: 0.92em;
+  }
 }

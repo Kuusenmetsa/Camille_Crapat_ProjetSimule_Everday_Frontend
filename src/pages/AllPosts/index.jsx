@@ -12,17 +12,17 @@ function AllPosts() {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
-      {modalOpen && (
-        <Modal
-          modalOpen={modalOpen}
-          setModalOpen={setModalOpen}
-          title="Créer une publication"
-        >
-          <CreatePost />
-        </Modal>
-      )}
       <Header />
       <div className="allPosts" id="allPosts">
+        {modalOpen && (
+          <Modal
+            modalOpen={modalOpen}
+            setModalOpen={setModalOpen}
+            title="Créer une publication"
+          >
+            <CreatePost />
+          </Modal>
+        )}
         <div className="createPost">
           <div className="profile">
             <img src={profileTest} alt="profile de l'utilisateur" />

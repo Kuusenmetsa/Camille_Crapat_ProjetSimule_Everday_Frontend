@@ -1,5 +1,16 @@
+/* 
+------------ Fichier css pour le Header hors connexion ------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 .headerHorsCo {
-  width: 100vw;
+  width: 100%;
   display: flex;
   background-color: #122442;
 }
@@ -15,7 +26,7 @@
 @media screen and (max-width: 480px) {
   .headerHorsCo {
     height: 25vh;
-    padding: 3vh 5.33%;
+    padding: 3vh 5.33vw;
     align-items: flex-end;
   }
   .logo {
@@ -25,7 +36,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .headerHorsCo {
     height: 25vh;
-    padding: 2.85vh 5.55%;
+    padding: 2.85vh 5.55vw;
     align-items: flex-end;
   }
   .logo {
@@ -51,6 +62,20 @@
   }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {
+  .headerHorsCo {
+    height: 18vh;
+    align-items: center;
+  }
+  .logo {
+    height: 40%;
+  }
 }
 @media screen and (min-width: 2561px) {
+  .headerHorsCo {
+    height: 18vh;
+    align-items: center;
+  }
+  .logo {
+    height: 40%;
+  }
 }

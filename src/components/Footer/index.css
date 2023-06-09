@@ -1,3 +1,14 @@
+/* 
+------------------ Fichier css pour le footer ---------------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 footer {
   width: 100%;
   height: 12vh;

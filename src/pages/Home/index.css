@@ -1,5 +1,16 @@
+/* 
+------------ Fichier css pour la page de connexion ----------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 .connexion {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +46,7 @@ button {
   .connexionContainer {
     width: 100%;
     height: 100%;
-    padding: 5.62vh 9.47% 3vh 9.47%;
+    padding: 5.62vh 9.47vw 3vh 9.47vw;
   }
   .connexion--forms {
     width: 100%;
@@ -45,7 +56,7 @@ button {
   .input {
     height: 37%;
     font-size: 0.84em;
-    padding-left: 2.5%;
+    padding-left: 2.5vw;
   }
   button {
     height: 11%;
@@ -59,7 +70,7 @@ button {
   .connexionContainer {
     width: 100%;
     height: 100%;
-    padding: 8vh 9.47% 5.33% 4vh;
+    padding: 8vh 9.47vw 4vh 9.47vw;
   }
   .connexion--forms {
     width: 100%;
@@ -69,7 +80,7 @@ button {
   .input {
     height: 37%;
     font-size: 0.84em;
-    padding-left: 2.65%;
+    padding-left: 2.65vw;
   }
   button {
     height: 11%;
@@ -86,7 +97,7 @@ button {
     height: 58%;
     display: flex;
     justify-content: space-between;
-    padding: 6vh 4% 3vh 4%;
+    padding: 6vh 3.9vw 3vh 3.9vw;
   }
   .connexion--forms {
     width: 100%;
@@ -95,7 +106,7 @@ button {
   .input {
     height: 37%;
     font-size: 1em;
-    padding-left: 4.53%;
+    padding-left: 2.14vw;
   }
   button {
     height: 22%;
@@ -113,7 +124,7 @@ button {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 7.5vh 2.28%;
+    padding: 7.5vh 2.28vw;
   }
   .connexion--forms {
     width: 100%;
@@ -122,7 +133,7 @@ button {
   .input {
     height: 40%;
     font-size: 1em;
-    padding-left: 2.63%;
+    padding-left: 0.8vw;
   }
   button {
     height: 20%;
@@ -130,6 +141,56 @@ button {
   }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {
+  .connexion {
+    height: 70vh;
+    justify-content: center;
+  }
+  .connexionContainer {
+    width: 35%;
+    height: 65%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5vh 2.28vw;
+  }
+  .connexion--forms {
+    width: 100%;
+    height: 50%;
+  }
+  .input {
+    height: 40%;
+    font-size: 1em;
+    padding-left: 0.8vw;
+  }
+  button {
+    height: 20%;
+    font-size: 1em;
+  }
 }
 @media screen and (min-width: 2561px) {
+  .connexion {
+    height: 70vh;
+    justify-content: center;
+  }
+  .connexionContainer {
+    width: 35%;
+    height: 65%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5vh 2.28vw;
+  }
+  .connexion--forms {
+    width: 100%;
+    height: 50%;
+  }
+  .input {
+    height: 40%;
+    font-size: 1em;
+    padding-left: 0.8vw;
+  }
+  button {
+    height: 20%;
+    font-size: 1em;
+  }
 }

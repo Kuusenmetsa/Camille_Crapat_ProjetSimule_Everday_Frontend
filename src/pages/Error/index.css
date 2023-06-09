@@ -1,10 +1,21 @@
+/* 
+---------------- Fichier css pour la page erreur ------------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 .error {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #122442;
-  padding: 7.05vh 5.33%;
+  padding: 7.05vh 5.33vw;
   color: #fff;
   font-weight: bold;
 }

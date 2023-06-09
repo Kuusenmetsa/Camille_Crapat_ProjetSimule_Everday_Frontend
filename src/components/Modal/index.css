@@ -1,6 +1,17 @@
+/* 
+------------ Fichier css pour la page de connexion ----------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 .bgrdModal {
   background-color: rgba(0, 0, 0, 0.4);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -19,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vh 4.16%;
+  padding: 1vh 1.66vw;
 }
 .modalHeader .title {
   width: 100%;
@@ -46,22 +57,30 @@
 
 @media screen and (max-width: 480px) {
   .modal {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .modal {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
   }
   .modalHeader .close {
-    top: 1.455%;
-    right: 4.16%;
+    top: 1.29vh;
+    right: 4.16vw;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  .modalHeader .close {
+    top: 1.29vh;
+    right: 4.16vw;
     width: 5%;
     display: flex;
     justify-content: center;
@@ -70,14 +89,14 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .modal {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
   }
   .modalHeader .close {
-    top: 1.295%;
-    right: 4.16%;
+    top: 1.29vh;
+    right: 4.16vw;
     width: 3%;
     display: flex;
     justify-content: center;
@@ -86,7 +105,7 @@
 }
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
   .modal {
-    width: 40vw;
+    width: 40%;
     height: 85vh;
     border-radius: 10px;
     overflow: hidden;
@@ -98,8 +117,8 @@
     align-items: center;
   }
   .modalHeader .close {
-    top: 1.3%;
-    right: 4%;
+    top: 1.1vh;
+    right: 1.6vw;
     width: 5%;
     display: flex;
     justify-content: center;
@@ -107,9 +126,8 @@
   }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {
-  /* à vérifier sur écran */
   .modal {
-    width: 40vw;
+    width: 40%;
     height: 85vh;
     border-radius: 10px;
     overflow: hidden;
@@ -121,8 +139,8 @@
     align-items: center;
   }
   .modalHeader .close {
-    top: 1.3%;
-    right: 4%;
+    top: 1.1vh;
+    right: 1.6vw;
     width: 5%;
     display: flex;
     justify-content: center;
@@ -130,9 +148,8 @@
   }
 }
 @media screen and (min-width: 2561px) {
-  /* à vérifier sur écran */
   .modal {
-    width: 40vw;
+    width: 40%;
     height: 85vh;
     border-radius: 10px;
     overflow: hidden;
@@ -144,8 +161,8 @@
     align-items: center;
   }
   .modalHeader .close {
-    top: 1.3%;
-    right: 4%;
+    top: 1.1vh;
+    right: 1.6vw;
     width: 5%;
     display: flex;
     justify-content: center;

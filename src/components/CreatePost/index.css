@@ -1,3 +1,14 @@
+/* 
+------------ Fichier css pour la page de connexion ----------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 .blockProfileCreatePost {
   width: 100%;
   display: flex;
@@ -84,7 +95,7 @@ input[type="file" i] {
 @media screen and (max-width: 480px) {
   .blockProfileCreatePost {
     height: 11%;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 4vw;
   }
   .blockProfileCreatePost .profile {
     margin-right: 2.66vw;
@@ -101,17 +112,11 @@ input[type="file" i] {
     padding: 2.5vh 4.16vw;
   }
   .imgButton {
-    width: 28vw;
+    width: 28%;
     height: 4vh;
     border-radius: 7px;
     font-size: 0.75em;
     margin-right: 2.66vw;
-  }
-  .createPostPop {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
   }
   .filesSelector {
     padding: 2.5vh 4.16vw;
@@ -120,7 +125,7 @@ input[type="file" i] {
     font-size: 0.58em;
   }
   .newPostButton {
-    width: 28vw;
+    width: 28%;
     height: 4vh;
     border-radius: 7px;
     font-size: 0.75em;
@@ -131,7 +136,7 @@ input[type="file" i] {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .blockProfileCreatePost {
     height: 12%;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 4vw;
   }
   .blockProfileCreatePost .profile {
     margin-right: 2.66vw;
@@ -148,7 +153,7 @@ input[type="file" i] {
     padding: 2.5vh 4.16vw;
   }
   .imgButton {
-    width: 28vw;
+    width: 28%;
     height: 4vh;
     border-radius: 7px;
     font-size: 1em;
@@ -161,7 +166,7 @@ input[type="file" i] {
     font-size: 0.9em;
   }
   .newPostButton {
-    width: 28vw;
+    width: 28%;
     height: 4vh;
     border-radius: 7px;
     font-size: 1em;
@@ -172,7 +177,7 @@ input[type="file" i] {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .blockProfileCreatePost {
     height: 14%;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 4vw;
   }
   .blockProfileCreatePost .profile {
     margin-right: 1.8vw;
@@ -189,7 +194,7 @@ input[type="file" i] {
     padding: 2.5vh 4.16vw;
   }
   .imgButton {
-    width: 18vw;
+    width: 18%;
     height: 5vh;
     border-radius: 7px;
     font-size: 1em;
@@ -202,7 +207,7 @@ input[type="file" i] {
     font-size: 0.9em;
   }
   .newPostButton {
-    width: 20vw;
+    width: 20%;
     height: 5vh;
     border-radius: 7px;
     font-size: 1em;
@@ -216,7 +221,7 @@ input[type="file" i] {
   }
   .blockProfileCreatePost {
     height: 15%;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .blockProfileCreatePost .profile {
     margin-right: 1vw;
@@ -230,23 +235,23 @@ input[type="file" i] {
   .newPost {
     height: 40%;
     font-size: 0.9em;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .imgButton {
-    width: 13vw;
+    width: 30%;
     height: 4.5vh;
     border-radius: 7px;
     font-size: 0.9em;
     margin-right: 1vw;
   }
   .filesSelector {
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .profileImgName {
     font-size: 0.82em;
   }
   .newPostButton {
-    width: 14vw;
+    width: 32%;
     height: 4.5vh;
     border-radius: 7px;
     font-size: 0.9em;
@@ -255,13 +260,12 @@ input[type="file" i] {
   }
 }
 @media screen and (min-width: 1601px) and (max-width: 2560px) {
-  /* A vérifier sur écran */
   .createPostBackground {
     display: block;
   }
   .blockProfileCreatePost {
     height: 15%;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .blockProfileCreatePost .profile {
     margin-right: 1vw;
@@ -275,23 +279,23 @@ input[type="file" i] {
   .newPost {
     height: 40%;
     font-size: 0.9em;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .imgButton {
-    width: 13vw;
+    width: 30%;
     height: 4.5vh;
     border-radius: 7px;
     font-size: 0.9em;
     margin-right: 1vw;
   }
   .filesSelector {
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .profileImgName {
     font-size: 0.82em;
   }
   .newPostButton {
-    width: 14vw;
+    width: 32%;
     height: 4.5vh;
     border-radius: 7px;
     font-size: 0.9em;
@@ -300,13 +304,12 @@ input[type="file" i] {
   }
 }
 @media screen and (min-width: 2561px) {
-  /* A vérifier sur écran */
   .createPostBackground {
     display: block;
   }
   .blockProfileCreatePost {
     height: 15%;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .blockProfileCreatePost .profile {
     margin-right: 1vw;
@@ -320,23 +323,23 @@ input[type="file" i] {
   .newPost {
     height: 40%;
     font-size: 0.9em;
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .imgButton {
-    width: 13vw;
+    width: 30%;
     height: 4.5vh;
     border-radius: 7px;
     font-size: 0.9em;
     margin-right: 1vw;
   }
   .filesSelector {
-    padding: 2.5vh 4%;
+    padding: 2.5vh 1.6vw;
   }
   .profileImgName {
     font-size: 0.82em;
   }
   .newPostButton {
-    width: 14vw;
+    width: 32%;
     height: 4.5vh;
     border-radius: 7px;
     font-size: 0.9em;

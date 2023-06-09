@@ -12,11 +12,11 @@
   border-radius: 5px;
   box-shadow: 0px 0px 7px 3px #464646;
   margin-top: 1.32vh;
-  padding: 2%;
+  padding: 0.86vh 0.54vw;
 }
 .toast--icone {
   height: 100%;
-  margin-right: 4.44%;
+  margin-right: 1.09vw;
 }
 .toast--icone img {
   width: 100%;
@@ -37,7 +37,7 @@
 }
 .toast--close {
   align-self: flex-start;
-  margin-left: 4.44%;
+  margin-left: 1.09vw;
 }
 .toast--close img {
   width: 100%;
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 480px) {
   .toasts {
-    width: 100vw;
+    width: 100%;
     bottom: 1.5vh;
   }
   .toast {
@@ -68,9 +68,9 @@
 }
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
   .toasts {
-    width: 27vw;
+    width: 27%;
     top: 1.5vh;
-    right: 1.5vh;
+    right: 0.94vw;
   }
   .toast {
     width: 95%;

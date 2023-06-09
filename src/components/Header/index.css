@@ -1,3 +1,14 @@
+/* 
+------------------ Fichier css pour le header ---------------------
+------------------- Créer par Camille CRAPAT ----------------------
+-------------------------------------------------------------------
+--------------------------- Infos : -------------------------------
+---------------- Taille des blocs en width en % ; -----------------
+--------------- Taille des blocs en height en vh ; ----------------
+--------------- Taille des enfants en width en % ; ----------------
+--------------- Taille des enfants en height en % ; ---------------
+------------- Taille des marges et paddings en vh / vw ------------
+*/
 .header {
   width: 100%;
   display: flex;
@@ -10,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vh 2.66%;
+  padding: 1.5vh 2.66vw;
 }
 .header .blockHeader .logo {
   width: auto;
@@ -124,7 +135,7 @@
     width: 20%;
     position: absolute;
     top: 10vh;
-    right: 2.66%;
+    right: 2.66vw;
     border: 0.33px solid #000;
     border-radius: 5px;
   }
@@ -147,7 +158,7 @@
     width: 20%;
     position: absolute;
     top: 10vh;
-    right: 2.66%;
+    right: 2.66vw;
     border: 0.33px solid #000;
     border-radius: 5px;
   }
@@ -170,7 +181,7 @@
     width: 20%;
     position: absolute;
     top: 10vh;
-    right: 2.66%;
+    right: 2.66vw;
     border: 0.33px solid #000;
     border-radius: 5px;
   }
